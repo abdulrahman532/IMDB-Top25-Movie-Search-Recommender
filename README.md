@@ -1,4 +1,3 @@
-# IMDB-Top25-Movie-Search-Recommender
 IMDb Movie Search and Recommendation System
 A Python application that scrapes IMDb's top 25 movies, allows fuzzy search for movie titles using Levenshtein distance, and provides movie recommendations based on description similarity using TF-IDF and cosine similarity, all accessible via a Gradio interface.
 Features
@@ -17,26 +16,33 @@ Internet connection for scraping IMDb data
 
 Installation
 
-Clone the repository:git clone https://github.com/your-username/IMDb-Movie-Recommender.git
+Clone the repository:
+git clone https://github.com/your-username/IMDb-Movie-Recommender.git
 cd IMDb-Movie-Recommender
 
 
-Create a virtual environment (optional but recommended):python -m venv venv
+Create a virtual environment (optional but recommended):
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
-Install dependencies:pip install beautifulsoup4 requests pandas python-levenshtein gradio scikit-learn
+Install dependencies:
+pip install beautifulsoup4 requests pandas python-levenshtein gradio scikit-learn
 
 
 Ensure the Top25_movie_imdb.csv file is available if you want to skip scraping and use pre-existing data.
 
+
 Usage
 
-Run the Jupyter notebook Project (4).ipynb to scrape data, generate the CSV, and launch the Gradio interface:jupyter notebook "Project (4).ipynb"
+Run the Jupyter notebook Project (4).ipynb to scrape data, generate the CSV, and launch the Gradio interface:
+jupyter notebook "Project (4).ipynb"
 
 
 Execute all cells to scrape IMDb data and launch the Gradio interface.
+
 In the Gradio interface, enter a movie title (e.g., "Godfther" for "The Godfather") and adjust the similarity threshold (0.1 to 1.0) to search for movies and view recommendations.
+
 
 Example
 Input:
